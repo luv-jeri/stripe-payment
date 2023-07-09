@@ -61,13 +61,6 @@ export default function Page() {
         height: "100vh",
       }}
     >
-      <h1
-        style={{
-          textAlign: "center",
-        }}
-      >
-        Next.js v13.4 + Stripe Checkout
-      </h1>
       {clientSecret && stripePromise ? (
         <Elements stripe={stripePromise} options={{ clientSecret }}>
           <CheckoutForm />
